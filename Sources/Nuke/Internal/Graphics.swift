@@ -318,7 +318,7 @@ extension CGSize {
 enum Screen {
 #if os(iOS) || os(tvOS) || os(xrOS)
     /// Returns the current screen scale.
-    static let scale: CGFloat = UIScreen.main.scale
+    static let scale: CGFloat = 1
 #elseif os(watchOS)
     /// Returns the current screen scale.
     static let scale: CGFloat = WKInterfaceDevice.current().screenScale
